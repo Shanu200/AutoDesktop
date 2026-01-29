@@ -1,0 +1,23 @@
+{
+  "base_folder": "C:/Users/Shanuka/Downloads",
+  "ignore_folders": ["Organized", "reports", "logs", "__pycache__"],
+  "target_root_folder": "Organized",
+  "categories": {
+    "Images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".svg"],
+    "PDFs": [".pdf"],
+    "Docs": [".doc", ".docx", ".txt", ".rtf", ".odt"],
+    "Spreadsheets": [".xls", ".xlsx", ".csv"],
+    "Presentations": [".ppt", ".pptx"],
+    "Videos": [".mp4", ".mkv", ".mov", ".avi", ".wmv"],
+    "Audio": [".mp3", ".wav", ".m4a", ".aac"],
+    "Archives": [".zip", ".rar", ".7z", ".tar", ".gz"],
+    "Code": [".py", ".js", ".ts", ".java", ".c", ".cpp", ".cs", ".html", ".css", ".php", ".json", ".xml"],
+    "Installers": [".exe", ".msi"]
+  },
+  "unknown_category": "Others",
+  "backup": {
+    "enabled": true,
+    "keep_last": 5,
+    "backup_folder_name": "_backups"
+  }
+}
