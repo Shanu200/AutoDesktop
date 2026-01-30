@@ -1,22 +1,8 @@
 from __future__ import annotations
 
 """
-reporter.py
------------
-TASK 2: Excel report generator
+Excel report generator
 
-Input:
-- moved_files list (list of dicts) from organizer run log JSON
-
-Output:
-- reports/report_YYYY-MM-DD.xlsx
-
-Excel content:
-1) "Moved Files" sheet: all file move details
-2) "Summary" sheet: files per category + total MB
-3) "Top 10 Largest" sheet: biggest files
-Plus:
-- bar chart (files moved by category) on Summary sheet
 """
 
 from pathlib import Path

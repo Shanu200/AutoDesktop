@@ -1,7 +1,5 @@
 """
 task1_restore.py
-----------------
-This script REVERSES the file organization.
 
 It moves files from:
     base_folder/Organized/<Category>/<file>
@@ -52,7 +50,7 @@ if __name__ == "__main__":
     print("Restoring files from:", organized_folder)
 
     if not organized_folder.exists():
-        print("❌ Organized folder not found. Nothing to restore.")
+        print(" Organized folder not found. Nothing to restore.")
         exit()
 
     moved_back = 0
@@ -71,4 +69,4 @@ if __name__ == "__main__":
             safe_move_back(file, dest_path)
             moved_back += 1
 
-    print(f"✅ Restore complete. Files moved back: {moved_back}")
+    print(f"Restore complete. Files moved back: {moved_back}")

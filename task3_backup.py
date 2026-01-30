@@ -1,3 +1,8 @@
+"""
+task3_backup.py
+
+"""
+
 import json
 from pathlib import Path
 from datetime import datetime
@@ -47,9 +52,9 @@ if __name__ == "__main__":
         deleted = cleanup_old_backups(backup_dir, keep_last=keep_last)
         logger.info(f"Backup complete. Deleted old backups: {len(deleted)}")
 
-        logger.info("Task 3 finished successfully ✅")
+        logger.info("Task 3 finished successfully")
 
     except Exception as e:
         # logger.exception prints full stack trace to logs/app.log
-        logger.exception(f"Task 3 failed ❌: {e}")
+        logger.exception(f"Task 3 failed: {e}")
         raise

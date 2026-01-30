@@ -1,7 +1,6 @@
 """
-task5_email_report.py
----------------------
-Sends the latest Excel report via email.
+task4_email_report.py
+
 """
 
 import os
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     smtp_pass = os.getenv("SMTP_PASS")
     mail_to = os.getenv("MAIL_TO")
 
-    # Pick latest report
+    # select latest report
     reports = sorted(Path("reports").glob("report_*.xlsx"))
     if not reports:
         raise FileNotFoundError("No report found. Run Task 2 first.")
@@ -46,4 +45,4 @@ if __name__ == "__main__":
         attachment_path=report_path
     )
 
-    print("✅ Report email sent successfully")
+    print(" Report email sent successfully")

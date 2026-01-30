@@ -1,8 +1,6 @@
 """
 task1_run.py
-------------
-This is a simple test runner for Task 1 only.
-It reads config/rules.json and runs organize_folder().
+
 """
 
 import json
@@ -43,7 +41,7 @@ if __name__ == "__main__":
         categories=cfg["categories"],
         unknown_category=cfg["unknown_category"],
         ignore_folders=cfg["ignore_folders"] + [cfg["target_root_folder"]],
-        dry_run=DRY_RUN  # start with dry run
+        dry_run=DRY_RUN  # start dry run
     )
 
     print("=== ORGANIZER RESULT ===")

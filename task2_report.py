@@ -1,7 +1,6 @@
 """
 task2_report.py
----------------
-Reads runs/last_run.json and generates an Excel report.
+
 """
 
 import json
@@ -24,4 +23,4 @@ if __name__ == "__main__":
     report_path = Path("reports") / f"report_{datetime.now().strftime('%Y-%m-%d')}.xlsx"
     out = generate_excel_report(moved_files, report_path)
 
-    print("✅ Excel report created:", out)
+    print("Excel report created:", out)
