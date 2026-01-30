@@ -1,5 +1,5 @@
 {
-  "base_folder": "C:/Users/Shanuka/Downloads",
+  "base_folder": "D:/AutomationDesk",
   "ignore_folders": ["Organized", "reports", "logs", "__pycache__"],
   "target_root_folder": "Organized",
   "categories": {
